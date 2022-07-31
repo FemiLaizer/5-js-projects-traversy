@@ -16,11 +16,20 @@ body {
 }
 
 .bg {
-    background: url('/blurry-loading-image/') no-repeat center center/cover;
+    background:
+        url('/blurry-loading-image/image001.jpg') no-repeat center center/cover;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vh;
-    height: 100vh;
+    top: -30px;
+    left: -30px;
+    /* width: 100vw; */
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    /* height: 100vh; */
     z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
 }
